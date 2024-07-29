@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #a020f0; /* Màu tím */
+}
+
+.body {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checked-count {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.input-box, .output-box {
+    margin-bottom: 20px;
+}
+
+#input-textbox, #output-textbox {
+    width: 100%;
+    max-width: 350px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px;
+}
+.checked-counts {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+#start-button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#start-button:hover {
+    background-color: #45a049;
+}
+
+#stop-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#stop-button:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .image-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        width: 80px;
+        font-size: 14px;
+    }
+}
